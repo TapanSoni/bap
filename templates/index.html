@@ -22,7 +22,7 @@
         }
 
         .container {
-            display: none;
+            display: block;
             background-color: #1e1e1e;
             border-radius: 12px;
             padding: 40px;
@@ -143,16 +143,6 @@
             "Bigger primes = Better security!",
             "Even numbers need not apply!"
         ];
-
-        document.addEventListener("DOMContentLoaded", function () {
-            setTimeout(() => {
-                document.getElementById('splash').style.opacity = '0';
-                setTimeout(() => {
-                    document.getElementById('splash').style.display = 'none';
-                    document.getElementById('main-content').style.display = 'block';
-                }, 1000);
-            }, 3000);
-        });
 
         const buttons = document.querySelectorAll('.size-button');
         buttons.forEach(button => {
